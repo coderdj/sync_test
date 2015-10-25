@@ -1,9 +1,8 @@
 Crash Test Program
 Author: D. Coderre
-Date: 4.09.2015
+Date: 4.10.2015
 
-Brief: Try to reproduce crashes in CAENVMElib driver by 
-       looping common CAEN functions.
+Brief: Try to debug timing errors by testing simplified code.
 
 Install: 
 
@@ -13,7 +12,8 @@ Install:
 	 - make
 
 Run:
-	- Adjust enums in main.cc as wanted
+	- Adjust enum NBoards in main.cc to number of daisy-chained
+          V1724 you have in the physical setup
 	- make
-	- ./crash_test
-	- Recommend running in debugger
+	- ./sync_test
+	- you have to manually fan an S-in to the boards
